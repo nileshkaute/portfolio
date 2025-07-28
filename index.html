@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nilesh Kaute | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* === Hero Section === */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #0d1117;
+  gap: 2rem;
+}
+
+.hero-text {
+margin-left: 10px;
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h1 span {
+  color: #58a6ff;
+}
+
+.hero-text h2 {
+  font-size: 2.3rem;
+  color: #8b949e;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  color: #c9d1d9;
+}
+
+.hero-img {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.hero-img img {
+  width: 100%;
+  filter: drop-shadow(0 0 10px rgba(88, 166, 255, 0.1));
+}
+
+/* === Section Previews (About, Skills, Projects) === */
+.preview {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #0d1117;
+  border-top: 1px solid #30363d;
+}
+
+.preview h2 {
+  font-size: 2rem;
+  color: #58a6ff;
+  margin-bottom: 1rem;
+}
+
+.preview p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+  color: #c9d1d9;
+}
+
+.btn-sm {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  background-color: transparent;
+  color: #58a6ff;
+  border: 1px solid #58a6ff;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.btn-sm:hover {
+  background-color: #238636;
+  color: white;
+  border-color: #238636;
+}
+
+/* Skills Icons */
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skills-icons img {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.skills-icons img:hover {
+  transform: scale(1.15);
+}
+
+/* Projects Teaser */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #161b22;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #30363d;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.1);
+}
+
+.project-card h3 {
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #c9d1d9;
+  font-size: 0.95rem;
+}
+
+/* CTA Section */
+.cta {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #161b22;
+  border-top: 1px solid #30363d;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.cta p {
+  color: #8b949e;
+  margin: 1rem 0;
+}
+
+  </style>
+</head>
+<body  oncontextmenu="return false" >
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">NK</div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Nilesh Kaute</span></h1>
+      <h2>Full Stack Developer</h2>
+      <p>I enjoy building modern, responsive, user friendly & dynamic websites using HTML, CSS, JavaScript Bootstrap , and more.</p>
+      <a href="projects.html" class="btn">View My Work</a>
+    </div>
+    <div class="hero-img">
+      <img src="image/me.jpg" alt="Developer Illustration">
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="preview about-preview">
+    <h2>About Me</h2>
+    <p>I am a passionate full stack developer from Pune, Maharashtra, with experience in frontend and backend technologies. I love solving real-world problems with code and building elegant web solutions.</p>
+    <a href="about.html" class="btn-sm">More About Me →</a>
+  </section>
+
+  <!-- Skills Summary -->
+  <!-- Skills Summary -->
+<section class="preview skills-preview">
+  <h2>Tech Stack</h2>
+  <div class="skills-icons">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" title="HTML" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" title="CSS" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" />
+  </div>
+  <a href="skills.html" class="btn-sm">View All Skills →</a>
+</section>
+
+
+  <!-- Projects Teaser -->
+  <section class="preview projects-preview">
+    <h2>Recent Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Online Bookstore</h3>
+        <p>Responsive Bootstrap-based book selling platform with login and cart features.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Clean personal branding site using HTML, CSS, and JS showcasing my skills.</p>
+      </div>
+    </div>
+    <a href="projects.html" class="btn-sm">See All Projects →</a>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Let's Work Together</h2>
+    <p>If you're looking to collaborate on a project or need a developer, feel free to reach out.</p>
+    <a href="contact.html" class="btn">Contact Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nilesh Kaute | Built with ❤️</p>
+    <div class="social-links">
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">Twitter</a>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>

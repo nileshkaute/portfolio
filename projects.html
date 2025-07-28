@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Nilesh</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #imageModal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.85);
+      justify-content: center;
+      align-items: center;
+    }
+    #imageModal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+    }
+    #imageModal span {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body  oncontextmenu="return false" >
+  <nav>
+    <div class="logo">NK</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a class="active" href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-header">
+    <h1>My Projects</h1>
+    <p>Some highlights of the work I've done.</p>
+  </section>
+
+  <section class="skills-section">
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>BookNest 📚</h3>
+        <p>An online bookstore with dynamic UI using Bootstrap & JS.</p>
+        <a href="#" class="btn" onclick="openImage('image/booknest.png')">View Demo</a>
+      </div>
+      <div class="skill-card">
+        <h3>Portfolio Site 💼</h3>
+        <p>A multi-page personal website showcasing all about me.</p>
+        <a href="#" class="btn" onclick="openImage('image/portfolio.png')">View Demo</a>
+      </div>
+      <div class="skill-card">
+        <h3>Music Player 🎵</h3>
+        <p> music player built with  featuring play, pause, and playlist management.</p>
+        <a href="#" class="btn" onclick="openImage('image/music.png')">View Demo</a>
+      </div>
+      <div class="skill-card">
+        <h3>NGO Website 🌍</h3>
+        <p>Informational and donation-focused NGO site with sections for events, causes, and contact forms.</p>
+        <a href="#" class="btn" onclick="openImage('image/ngo.png')">View Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="imageModal">
+    <span onclick="closeImage()">&times;</span>
+    <img id="modalImg" src="" alt="Project Preview">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Nilesh. All rights reserved.</p>
+  </footer>
+
+  
+</body>
+<script src="script.js"></script>
+</html>
